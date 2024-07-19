@@ -4,10 +4,11 @@
 <script>
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenuLinks = document.getElementById('mobile-menu-links');
-  mobileMenuButton.addEventListener('click', () => {
-    mobileMenuLinks.classList.toggle('hidden');
-  })
-
+  if (mobileMenuButton && mobileMenuLinks) {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenuLinks.classList.toggle('hidden');
+    });
+  }
 </script>
 
 <nav>
@@ -33,7 +34,7 @@
         <div class="hidden sm:block sm:ml-6">
           <div class="flex justify-evenly w-full space-x-4 sm:space-x-2">
             <a href="/" class="text-gray-700 hover:text-sky-500 px-3 py-2 rounded-md text-med text-xl">Home</a>
-            <a href="/about-us" class="text-gray-700 hover:text-sky-500 px-3 py-2 rounded-md text-med text-xl">About Me</a>
+            <a href="/about-me" class="text-gray-700 hover:text-sky-500 px-3 py-2 rounded-md text-med text-xl">About Me</a>
         </div>
       </div>
     </div>
@@ -43,7 +44,7 @@
   <div class="sm:hidden" id="mobile-menu">
     <div class="px-2 py-1 hidden" id='mobile-menu-links'>
       <a href="/" class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-1.5 rounded-md text-base font-medium">Home</a>
-      <a href="/about-us" class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-1.5 rounded-md text-base font-medium">About Us</a>
+      <a href="/about-me" class="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-1.5 rounded-md text-base font-medium">About Us</a>
       <div class="relative">
       </div>
     </div>
