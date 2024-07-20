@@ -2,13 +2,15 @@
 
 ---
 <script>
-  const mobileMenuButton = document.getElementById('mobile-menu-button');
-  const mobileMenuLinks = document.getElementById('mobile-menu-links');
-  if (mobileMenuButton && mobileMenuLinks) {
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenuLinks.classList.toggle('hidden');
-    });
-  }
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton: HTMLElement | null = document.getElementById('mobile-menu-button');
+    const mobileMenuLinks: HTMLElement | null = document.getElementById('mobile-menu-links');
+    if (mobileMenuButton && mobileMenuLinks) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenuLinks.classList.toggle('hidden');
+      });
+    }
+  });
 </script>
 
 <nav>
