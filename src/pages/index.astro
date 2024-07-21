@@ -2,16 +2,22 @@
 import Navbar from "../components/Navbar.astro";
 
 ---
-<head>
-
-</head>
-<html>
-  <Navbar />
-  <h1>Craig Wagner</h1>
+<html lang='en'>
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="description" content="Portfolio site for Craig Wagner" />
+      <meta name="viewport" content="width=device-width" />
+      <meta name="generator" content={Astro.generator} />
+      <title>Craig Wagner</title>
+  </head>
+  <body>
+    <Navbar />
+    <h1>Craig Wagner</h1>
+  </body>
 </html>
 
 <style>
-  html {
+  body {
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
