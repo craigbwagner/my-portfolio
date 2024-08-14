@@ -12,8 +12,14 @@ import Navbar from "../components/Navbar.astro";
   </head>
   <body>
     <Navbar />
-    <div>
-      <h1>Craig Wagner</h1>
+    <h1>Craig Wagner</h1>
+    <div class=''>
+      <img src="/public/Headshot.jpg" alt="Craig Wagner" class='headshot-photo' />
+      <a href="https://github.com/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D1E8E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+          <path d="M9 19c-4.418 1.155-4.418-2.577-6-3m12 0c-1.582.423-1.582 4.155-6 3m0 0c-3.866-1.033-6-4.155-6-9a6 6 0 0 1 12 0c0 4.155-2.134 7.967-6 9zm0 0v2m0-2c3.866-1.033 6-4.155 6-9a6 6 0 0 0-12 0c0 4.155 2.134 7.967 6 9z"></path>
+        </svg>
+      </a>
     </div>
     <main>
       <p>
@@ -51,6 +57,30 @@ import Navbar from "../components/Navbar.astro";
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 1em;
 	}
+  h2 {
+    font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1;
+    margin-bottom: 1em;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: .5em;
+  }
+
+  .headshot-photo {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1em;
+  }
 </style>
