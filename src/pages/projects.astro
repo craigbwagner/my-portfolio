@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Navbar from "../components/Navbar.astro";
 
 ---
@@ -13,10 +14,20 @@ import Navbar from "../components/Navbar.astro";
   <body>
     <Navbar />
     <div>
-      <h1>Craig Wagner</h1>
+      <h1>Projects</h1>
     </div>
     <main>
-      <p>&#60;Under Construction&#62;</p>
+      <div class="project-container">
+        <div class="pictures-container">
+          <Image src="/blue-wave-screenshot.png" alt="Craig Wagner" width={300} height={100} />
+        </div>
+        <div class="project-description">
+          <a href="https://www.bluewaveamerica.com/"><h2>Blue Wave America</h2></a>
+          <a href="https://github.com/craigbwagner/blue-wave-america">GitHub</a>
+          <p>
+            &emsp;
+          </p>
+      </div>
     </main>
   </body>
 </html>
@@ -37,6 +48,33 @@ import Navbar from "../components/Navbar.astro";
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 1em;
+    margin-bottom: .5em;
 	}
+
+  h2 {
+    font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1;
+    margin-bottom: .5em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: #D9B08C;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #FFCB9A;
+  }
+
+  .project-container {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    margin-bottom: 1em;
+  }
 </style>
