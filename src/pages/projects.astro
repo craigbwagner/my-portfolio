@@ -19,13 +19,13 @@ import Navbar from "../components/Navbar.astro";
     <main>
       <div class="project-container">
         <div class="pictures-container">
-          <Image src="/blue-wave-screenshot.png" alt="Craig Wagner" width={300} height={100} />
+          <Image src="/blue-wave-screenshot.png" alt="Craig Wagner" width={400} height={200} />
         </div>
         <div class="project-description">
           <a href="https://www.bluewaveamerica.com/"><h2>Blue Wave America</h2></a>
-          <a href="https://github.com/craigbwagner/blue-wave-america">GitHub</a>
+          <a href="https://github.com/craigbwagner/blue-wave-america" class="github-link">GitHub</a>
           <p>
-            &emsp;
+            Built using Astro and Tailwind, Blue Wave America is a static website that provides information on the Super PAC with the same name. Still a work in progress, the site will eventually contain information on the organization's activity and ways to get involved in Michigan, North Carolina, Pennsylvania, and Wisconsin. The navbar is disabled until content is provided to populate the additional pages, but the site is fully responsive. (Note: I do not endorse the organization or its activities)
           </p>
       </div>
     </main>
@@ -43,6 +43,7 @@ import Navbar from "../components/Navbar.astro";
 		line-height: 1.6;
     background-color: #2C3531;
 	}
+
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
@@ -75,6 +76,16 @@ import Navbar from "../components/Navbar.astro";
     display: flex;
     justify-content: center;
     gap: 4em;
+    margin-bottom: 1em;
+  }
+
+  .pictures-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .github-link {
     margin-bottom: 1em;
   }
 </style>
