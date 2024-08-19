@@ -25,7 +25,7 @@ import Navbar from "../components/Navbar.astro";
         <div class="project-description">
           <a href="https://www.bluewaveamerica.com/" target="_blank"><h3>Blue Wave America</h3></a>
           <p>
-            Built using Astro + Tailwind and deployed on Netlify, Blue Wave America is a static website that provides information on the Super PAC with the same name. Still a work in progress, the site will eventually contain information on the organization's activity and ways to get involved in Michigan, North Carolina, Pennsylvania, and Wisconsin. The pictured navbar is disabled until content is provided to populate the additional pages, but the site is fully responsive. (Note: I do not endorse the organization or its activities)
+            Built using Astro + Tailwind and deployed on Netlify, Blue Wave America is a static website that provides information on the Super PAC with the same name. Still a work in progress, the site will eventually contain information on the organization's activity and ways to get involved in Michigan, North Carolina, Pennsylvania, and Wisconsin. The pictured navbar is disabled until content is provided to populate the additional pages, but the site is fully responsive. (Note: The views and opinions of Blue Wave America are not my own)
           </p>
           <a href="https://github.com/craigbwagner/blue-wave-america" target="_blank" class="github-link">GitHub</a>
         </div>
@@ -33,15 +33,28 @@ import Navbar from "../components/Navbar.astro";
       <h2>Past Projects</h2>
       <div class="project-container">
         <div class="pictures-container">
-          <Image src="/spendsense-homepage.png" alt="Blue Wave Site Screenshot" width={700} height={300} />
-          <Image src="/spendsense-dashboard.png" alt="Blue Wave Site Screenshot" width={700} height={300} />
+          <Image src="/spendsense-homepage.png" alt="Screenshot of spendsense homepage" width={700} height={300} />
+          <Image src="/spendsense-dashboard.png" alt="Screenshot of spendsense dashboard" width={700} height={300} />
         </div>
         <div class="project-description">
           <a href="https://spendsense-frontend.netlify.app/" target="_blank"><h3>Spendsense</h3></a>
           <p>
-            Spendsense is a full-stack web application that allows users to track their spending habits. The frontend is built using React, Shadcn, Tailwind, and Zod. The backend runs on Python with Flask and Postgres. Users can create an account, log in, add transactions, and view their spending habits on a dashboard. User authentication is handled by JWT and Bcrypt, and the site is deployed on Netlify (Frontend) and Heroku (Backend). Known issues include a less-than-responsive design.
+            Developed in collaboration with a General Assembly classmate, Spendsense is a full-stack web application that allows users to track their spending habits. The frontend is built using React, Shadcn, Tailwind, and Zod. The backend runs on Python + Flask and Postgres for data storage. Users can create an account, log in, add transactions, and view their spending habits on a dashboard. User authentication is handled by JWT and Bcrypt, and the site is deployed on Netlify (Frontend) and Heroku (Backend). Known issues include a less-than-responsive design.
           </p>
           <a href="https://github.com/craigbwagner/spendsense-frontend" target="_blank" class="github-link">GitHub</a>
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="pictures-container">
+          <Image src="/crowdfunly-home.png" alt="Screenshot of crowdfunly homepage" width={700} height={300} />
+          <Image src="/crowdfunly-campaign.png" alt="Screenshot of a crowdfunly campaign page" width={700} height={300} />
+        </div>
+        <div class="project-description">
+          <a href="https://crowdfunly.netlify.app/" target="_blank"><h3>Crowdfunly</h3></a>
+          <p>
+            Created in collaboration with two fellow members of my General Assembly cohort, Crowdfunly is a full-stack web application that allows users to create and donate to crowdfunding campaigns. The frontend is built using React and features payment processing with Stripe. The backend runs on Node.js with Express and utilizes MongoDB as the database. Users can create an account, log in, create campaigns, and donate to campaigns. User authentication is handled by JWT and Bcrypt, and the site is deployed on Netlify (Frontend) and Heroku (Backend).
+          </p>
+          <a href="https://github.com/craigbwagner/crowdfunly-frontend" target="_blank" class="github-link">GitHub</a>
       </div>
     </main>
   </body>
