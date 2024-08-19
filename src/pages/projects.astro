@@ -19,7 +19,7 @@ import Navbar from "../components/Navbar.astro";
     <main>
       <div class="project-container">
         <div class="pictures-container">
-          <Image src="/blue-wave-screenshot.png" alt="Craig Wagner" width={400} height={200} />
+          <Image src="/blue-wave-screenshot.png" alt="Blue Wave Site Screenshot" width={1000} height={800} />
         </div>
         <div class="project-description">
           <a href="https://www.bluewaveamerica.com/"><h2>Blue Wave America</h2></a>
@@ -36,8 +36,7 @@ import Navbar from "../components/Navbar.astro";
   body {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
+		max-width: calc(80%);
 		color: #D1E8E2;
 		font-size: 18px;
 		line-height: 1.6;
@@ -73,7 +72,8 @@ import Navbar from "../components/Navbar.astro";
   }
 
   .project-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     gap: 4em;
     margin-bottom: 1em;
@@ -81,11 +81,20 @@ import Navbar from "../components/Navbar.astro";
 
   .pictures-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .github-link {
     margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .project-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
   }
 </style>
