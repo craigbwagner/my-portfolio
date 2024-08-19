@@ -19,14 +19,14 @@ import Navbar from "../components/Navbar.astro";
     <main>
       <div class="project-container">
         <div class="pictures-container">
-          <Image src="/blue-wave-screenshot.png" alt="Blue Wave Site Screenshot" width={1000} height={800} />
+          <Image src="/blue-wave-screenshot.png" alt="Blue Wave Site Screenshot" width={700} height={300} />
         </div>
         <div class="project-description">
           <a href="https://www.bluewaveamerica.com/"><h2>Blue Wave America</h2></a>
-          <a href="https://github.com/craigbwagner/blue-wave-america" class="github-link">GitHub</a>
           <p>
-            Built using Astro and Tailwind, Blue Wave America is a static website that provides information on the Super PAC with the same name. Still a work in progress, the site will eventually contain information on the organization's activity and ways to get involved in Michigan, North Carolina, Pennsylvania, and Wisconsin. The navbar is disabled until content is provided to populate the additional pages, but the site is fully responsive. (Note: I do not endorse the organization or its activities)
+            Built using Astro and Tailwind, Blue Wave America is a static website that provides information on the Super PAC with the same name. Still a work in progress, the site will eventually contain information on the organization's activity and ways to get involved in Michigan, North Carolina, Pennsylvania, and Wisconsin. The pictured navbar is disabled until content is provided to populate the additional pages, but the site is fully responsive. (Note: I do not endorse the organization or its activities)
           </p>
+          <a href="https://github.com/craigbwagner/blue-wave-america" class="github-link">GitHub</a>
       </div>
     </main>
   </body>
@@ -36,7 +36,8 @@ import Navbar from "../components/Navbar.astro";
   body {
 		margin: auto;
 		padding: 1rem;
-		max-width: 80%;
+		width: 80%;
+    max-width: 1500px;
 		color: #D1E8E2;
 		font-size: 18px;
 		line-height: 1.6;
@@ -48,7 +49,7 @@ import Navbar from "../components/Navbar.astro";
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 	}
 
   h2 {
@@ -56,6 +57,7 @@ import Navbar from "../components/Navbar.astro";
 		font-weight: 700;
 		line-height: 1;
     margin-bottom: .5em;
+    text-align: center;
   }
 
   p {
@@ -86,13 +88,19 @@ import Navbar from "../components/Navbar.astro";
     align-items: center;
   }
 
+  .project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .github-link {
     margin-bottom: 1em;
   }
 
   @media screen and (max-width: 1150px) {
     body {
-      max-width: 90%;
+      width: 90%;
     }
 
     .project-container {
