@@ -30,6 +30,15 @@ import Navbar from "../components/Navbar.astro";
           <a href="https://github.com/craigbwagner/blue-wave-america" target="_blank" class="github-link">GitHub</a>
         </div>
       </div>
+      <div class="project-container" id="character-sheet-container">
+        <div class="project-description">
+          <h3>D&D Character Sheet</h3>
+          <p>
+            My first foray in working with TypeScript, I'm using this project as a learning experience for strictly-typed programming along with Zustand + Immer for handling React state. Eventually, this Dungeons and Dragons character sheet creation and management app will allow the user to perform many of the basic functions offered by a site like DnD Beyond. Planned features include providing the ability for a user to create characters, save custom abilities, and add items that can subsequently be used for other characters or users. Future enhancements may include dungeon master tools, such as the ability to add monsters to the database, create encounters, track initiative, and keep track of enemy hitpoints.
+          </p>
+          <a href="https://github.com/craigbwagner/dnd-character-sheet-frontend" target="_blank" class="github-link">GitHub</a>
+        </div>
+      </div>
       <h2>Past Projects</h2>
       <div class="project-container">
         <div class="pictures-container">
@@ -142,6 +151,10 @@ import Navbar from "../components/Navbar.astro";
 
   .github-link {
     margin-bottom: 1em;
+  }
+
+  #character-sheet-container {
+    grid-template-columns: 1fr;
   }
 
   @media screen and (max-width: 1150px) {
