@@ -19,6 +19,12 @@ import Navbar from "../components/Navbar.astro";
     <main>
       <h2>Current Projects</h2>
       <div class="project-container">
+        <div class="project-description">
+          <a href="https://github.com/PROJXON/PROJXON-HRIS" target="_blank"><h3>Projxon HRIS</h3></a>
+          <p></p>
+        </div>
+      </div>
+      <div class="project-container">
         <div class="pictures-container">
           <Image src="/blue-wave-screenshot-1.png" alt="Screenshot of Blue Wave America's logo and navbar on the homepage" width={500} height={300} />
           <Image src="/blue-wave-screenshot-2.png" alt="Additional screenshot of Blue Wave America's site showing a newsletter sign up form" width={500} height={300} />
@@ -41,6 +47,20 @@ import Navbar from "../components/Navbar.astro";
         </div> -->
       </div>
       <h2>Past Projects</h2>
+      <div class="project-container">
+        <div class="project-description">
+          <a href="https://github.com/PROJXON/canvas-certificate-generator" target="_blank"><h3>Canvas Certificate Generator</h3></a>
+          <p>
+            <b>Skills Used: AWS Lambda, C#, Avalonia</b>
+          </p>
+          <p>
+            The purpose of this application is to generate certificates for the successful completion of canvas courses in the PROJXON Momentum Internship Program. It works by taking user input for the participant name, course name, and completion date, then overlays this information over an image template and generates a pdf for the user. This should hopefully reduce time needed to create certificates.
+          </p>
+          <p>
+            Generated PDFs can be saved on the user's computer, or automatically sent to the recipient via an AWS Lambda function if an email address is supplied.
+          </p>
+        </div>
+      </div>
       <div class="project-container">
         <div class="pictures-container">
           <Image src="/spendsense-homepage.png" alt="Screenshot of spendsense homepage" width={700} height={300} />
@@ -127,7 +147,7 @@ import Navbar from "../components/Navbar.astro";
 
   .project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     gap: 4em;
     margin-bottom: 1em;
